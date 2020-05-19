@@ -29,7 +29,7 @@ class App extends React.Component{
     let units = e.target.elements.unit_list.value;
 
     // Create a api call called api_call
-    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=${units}&APPID=${API_Key}`);
+    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=${units}&APPID=${API_Key}`);
 
     // Convert "api_call" to json format and store it in "data"
     const data = await api_call.json();
