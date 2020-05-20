@@ -9,6 +9,7 @@ input {
   margin-bottom: 30px;
   margin-right: 20px;
   letter-spacing: 2px;
+  transform: scale(1.1);
 }
 
 button {
@@ -19,10 +20,11 @@ button {
   border-radius: 2px;
   font-weight: lighter;
   letter-spacing: px;
-  font-size: 15px;
+  font-size: 1.2rem;
   background-color: #4CAF50;
   color: rgb(255, 255, 255);
   width: 100%;
+  transform: scale(1.1);
 }
 
 button:hover {
@@ -41,24 +43,29 @@ select{
   margin-bottom: 30px;
   margin-right: 20px;
   letter-spacing: 2px;
+  transform: scale(1.1);
 }
 
 .main {
   height: 90vh;
   background: rgba(0,0,0,0.75);
   box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
-  width: 550px;
-  height: 700px;
+  width: 30vw;
+  height: 90vh;
   margin: 0 auto;
 }
 
 #title{
   font-family: 'Open Sans', sans-serif;
   color: white;
+  font-size: 3rem;
+  text-shadow: 1px 1px 10px #000;
 }
 
 #subtitle{
   color: white;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 10px #000;
 }
 
 #weatherTitle{
@@ -76,12 +83,27 @@ select{
 .outputContainer div {
   display: inline-block;
   min-height: 40px;
-  min-width: 140px;
+  min-width: 165px;
   height: auto;
   color: white;
+  font-size: 1.3rem;
   text-shadow: 1px 1px 15px #000;
 }
 
 .flex-item {
   margin: auto;
+}
+
+
+/*---Media Queries --*/
+@media (max-height: 750px) {
+  .main{
+    height: 750px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .main{
+    width: 550px;
+  }
 }

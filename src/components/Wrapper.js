@@ -42,7 +42,7 @@ const Wrapper = (props) => {
               <div className="mx-auto text-center mt-5"><Titles /></div>
             </div>
             <div className="row">
-              <div className="mx-auto text-center mt-3">
+              <div className="col-5-lg mx-auto text-center mt-3">
                 <Form getWeather={props.getWeather}/>
               </div>
             </div>
